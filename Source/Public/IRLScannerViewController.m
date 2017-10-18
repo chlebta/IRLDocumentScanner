@@ -122,6 +122,9 @@
     
     self.detect_toggle.selected     =  self.cameraView.detectorType       == IRLScannerDetectorTypePerformance;
     self.contrast_type.selected     =  self.cameraView.cameraViewType   == IRLScannerViewTypeBlackAndWhite;
+    
+    self.cameraView.enableTorch = YES;
+    self.flash_toggle.selected = YES;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -294,7 +297,7 @@
     imgView.backgroundColor = [UIColor clearColor];
     imgView.opaque = NO;
     imgView.alpha = 0.0f;
-    imgView.transform = CGAffineTransformMakeScale(0.4f, 0.4f);
+//    imgView.transform = CGAffineTransformMakeScale(0.4f, 0.4f);
 
     // Some Feedback to the User
     UIView *white = [[UIView alloc] initWithFrame:self.view.frame];
