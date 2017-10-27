@@ -123,7 +123,7 @@
     self.detect_toggle.selected     =  self.cameraView.detectorType       == IRLScannerDetectorTypePerformance;
     self.contrast_type.selected     =  self.cameraView.cameraViewType   == IRLScannerViewTypeBlackAndWhite;
     
-    self.cameraView.enableTorch = YES;
+    self.cameraView.enableTorch = NO;
     self.flash_toggle.selected = YES;
 }
 
